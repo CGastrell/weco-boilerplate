@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run lint && webpack --config webpack.config.js -p",
-    "dev": "npm run lint && webpack-dev-server --content-base www/ --config webpack.dev.config.js --inline",
+    "build": "npm run lint && /node_modules/webpack/bin/webpack.js --config webpack.config.js -p",
+    "dev": "npm run lint && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base www/ --config webpack.dev.config.js --inline",
     "lint": "./node_modules/standard/bin/cmd.js 'src/**/*.js'"
   },
   "keywords": [],
