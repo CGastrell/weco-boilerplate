@@ -11,6 +11,7 @@ Tested with versions:
 ## Pre-requisites
 You have to make you're own way to have a stable and functional `cordova` installation. Including any SDK and environment settings they may require.
 
+
 ## Features
   - A simple (yet not so simple) webpack config both for dev and prod
   - [Standard][1] linting enforced, if it isn't clean, it won't compile [you can disable it][2]
@@ -81,6 +82,12 @@ Or run it on a connected device:
 cordova run android
 ```
 
+### Basic testing
+You wanna know if it's working on a one liner? As soon as you created the project you can run:
+```bash
+npm install && npm run build && cordova platform add android && cordova emulate android
+```
+
 ### Disable standard enforced linting
 If you don't like linting or standard, disable it changing the checker script on the `package.json` file:
 ```json
@@ -90,3 +97,4 @@ to this
 ```json
    "lint": "echo 0"
 ```
+
