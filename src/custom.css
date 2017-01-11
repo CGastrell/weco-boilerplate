@@ -1,0 +1,73 @@
+/* khula-300 - latin */
+@font-face {
+  font-family: 'Khula Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/khula-v1-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Khula Light'), local('Khula-Light'),
+       url('./fonts/khula-v1-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/khula-v1-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/khula-v1-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/khula-v1-latin-300.svg#Khula') format('svg'); /* Legacy iOS */
+}
+/* khula-regular - latin */
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/khula-v1-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Khula'), local('Khula-Regular'),
+       url('./fonts/khula-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/khula-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/khula-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/khula-v1-latin-regular.svg#Khula') format('svg'); /* Legacy iOS */
+}
+
+* {
+  text-rendering: geometricPrecision;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-item {
+  padding: 5px;
+  color: white;
+  text-shadow: 0px -10px 15px rgba(0,0,0,0.5), 0px -26px 26px rgba(0,0,0,0.5);
+  font-family: 'Khula Light';
+  font-size: 127px;
+  color: white;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+.supergradient {
+  background: rgba(184,25,11,0.58);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(184,25,11,0.58) 0%, rgba(209,23,113,0.84) 25%, rgba(224,58,36,0.96) 36%, rgba(227,66,45,1) 40%, rgba(241,111,92,1) 61%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(184,25,11,0.58)), color-stop(25%, rgba(209,23,113,0.84)), color-stop(36%, rgba(224,58,36,0.96)), color-stop(40%, rgba(227,66,45,1)), color-stop(61%, rgba(241,111,92,1)), color-stop(92%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(184,25,11,0.58) 0%, rgba(209,23,113,0.84) 25%, rgba(224,58,36,0.96) 36%, rgba(227,66,45,1) 40%, rgba(241,111,92,1) 61%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(184,25,11,0.58) 0%, rgba(209,23,113,0.84) 25%, rgba(224,58,36,0.96) 36%, rgba(227,66,45,1) 40%, rgba(241,111,92,1) 61%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(184,25,11,0.58) 0%, rgba(209,23,113,0.84) 25%, rgba(224,58,36,0.96) 36%, rgba(227,66,45,1) 40%, rgba(241,111,92,1) 61%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(184,25,11,0.58) 0%, rgba(209,23,113,0.84) 25%, rgba(224,58,36,0.96) 36%, rgba(227,66,45,1) 40%, rgba(241,111,92,1) 61%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8190b', endColorstr='#ffffff', GradientType=1 );
+}
